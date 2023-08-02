@@ -10,4 +10,5 @@ Tailwind CSS
 
 Note: this won't work because sensitive information is stored in a .env file. 
 
-![ddd](spaceship.jpg)
+![home](home.jpg)
+![create post](create.jpg)
