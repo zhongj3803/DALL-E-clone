@@ -10,5 +10,5 @@ Tailwind CSS
 
 Note: this won't work because sensitive information is stored in a .env file. 
 
-![home](home.jpg)
-![create post](create.jpg)
+![home](home.png)
+![create post](create.png)
