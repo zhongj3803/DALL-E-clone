@@ -142,7 +142,7 @@ const CreatePost = () => {
           <button
             type="submit"
             className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center">
-            {loading ? 'Adding.' : 'Add to gallery'}
+            {loading ? 'Adding...' : 'Add to gallery'}
           </button>
         </div>
       </form>

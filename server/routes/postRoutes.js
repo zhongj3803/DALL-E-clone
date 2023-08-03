@@ -27,19 +27,26 @@ router.route('/').get(async (req, res) => {
 
 // CREATE A POST
 router.route('/').post(async (req, res) => {
+    console.log('checkpoint 1')
     try {
+        console.log('checkpoint 2')
         const { name, prompt, photo } = req.body;
+        console.log('checkpoint 3')
         const photoUrl = await cloudinary.uploader.upload(photo);
-
+        console.log('checkpoint 4')
         const newPost = await Post.create({
             name,
             prompt,
             photo: photoUrl.url,
         })
+        console.log('checkpoint 5')
 
         res.status(201).json({ success: true, data: newPost });
+        console.log('checkpoint 6')
     } catch (error) {
+        console.log('checkpoint 7')
         res.status(500).json({success: false, message: error});
+        console.log('checkpoint 8')
     }
 });
 
